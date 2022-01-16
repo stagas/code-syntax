@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`syntax mapped regexp 1`] = `"<span class=\\"foo\\">hello</span> <span class=\\"bar-outer\\"><span class=\\"bar\\">123</span></span> <span class=\\"bar-outer\\">789</span> <span class=\\"foo\\">world</span>"`;
+
+exports[`syntax multiple named group regexp 1`] = `"<span class=\\"foo\\">hello</span> <span class=\\"bar\\">123</span> <span class=\\"foo\\">world</span>"`;
+
+exports[`syntax simple named group regexp 1`] = `"<span class=\\"foo\\">hello</span> 123 <span class=\\"foo\\">world</span>"`;

@@ -1,0 +1,32 @@
+import * as foo from 'hello'
+import * as foo, { x as y } from 'hello'
+import { x as y }, * as foo from 'hello'
+import { compile, syntax, SyntaxDefinition } from './syntax'
+
+var js = import('../languages/javascript')
+
+break do instanceof typeof case else new try catch finally
+return continue for of switch while with debugger default
+if throw delete in as from export import async await void
+extends implements private public package protected static
+declare yield
+
+class Foo {}
+class Foo extends Another {}
+class Foo implements Other {}
+class Foo extends Another implements Other {}
+class {}
+
+class function constructor prototype
+const get set var let interface type
+enum string boolean number any unknown never
+Object String Number RegExp Buffer Math
+
+true false null undefined NaN Infinity
+
+this super
+
+: + - ~ !
+** ?? ?. >> << >>> < > <= >= == != === !==
+&& || *= /= %= += -= <<= >>= >>>= &= ^= |= **=
+= ? ... * / % & ^ | ++ --

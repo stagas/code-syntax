@@ -1,0 +1,255 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`css 1.txt 1`] = `
+"<span class=\\"comment\\">/* a comment */</span>
+
+<span class=\\"operator\\">:</span><span class=\\"tag\\">root</span> <span class=\\"rules-outer\\">{
+  <span class=\\"normal\\">--primary</span>: <span class=\\"number\\">#666</span>;
+  <span class=\\"normal\\">--with-dash</span>: <span class=\\"number\\">#444</span>;
+}</span>
+
+<span class=\\"tag\\">div</span> <span class=\\"rules-outer\\">{
+  <span class=\\"declare\\">color</span>:<span class=\\"value\\"> blue</span>;
+  <span class=\\"declare\\">overflow</span>:<span class=\\"value\\"> hidden
+</span>}</span>
+
+<span class=\\"property\\">.class</span> <span class=\\"rules-outer\\">{
+  <span class=\\"declare\\">background-color</span>: <span class=\\"declare\\">var</span>(<span class=\\"normal\\">--primary</span>);
+}</span>
+
+<span class=\\"property\\">#id</span> <span class=\\"rules-outer\\">{
+  <span class=\\"declare\\">overflow</span>:<span class=\\"value\\"> hidden</span>;
+  <span class=\\"declare\\">width</span>: <span class=\\"number\\">1</span><span class=\\"declare\\">vmax</span>;
+  <span class=\\"declare\\">height</span>: <span class=\\"number\\">1</span><span class=\\"declare\\">vmin</span>;
+}</span>
+
+<span class=\\"tag\\">body</span>[<span class=\\"attribute-outer\\"><span class=\\"attribute\\">t</span><span class=\\"attribute\\">h</span><span class=\\"attribute\\">e</span><span class=\\"attribute\\">m</span><span class=\\"attribute\\">e</span>=<span class=\\"string\\">&#39;thing&#39;</span></span>] <span class=\\"operator\\">&gt;</span> <span class=\\"property\\">#id</span> <span class=\\"rules-outer\\">{
+  <span class=\\"declare\\">color</span>:<span class=\\"value\\"> black</span>;
+}</span>
+
+<span class=\\"tag\\">body</span><span class=\\"rules-outer\\">{<span class=\\"declare\\">background</span>:<span class=\\"value\\">red</span>}</span>
+<span class=\\"tag\\">body</span><span class=\\"rules-outer\\">{<span class=\\"declare\\">background</span>:<span class=\\"value\\">red</span>;}</span>
+"
+`;
+
+exports[`html 1.txt 1`] = `
+"&lt;<span class=\\"tag-outer\\"><span class=\\"_-outer\\"><span class=\\"tag\\">div</span></span></span>&gt;&lt;<span class=\\"tag-outer\\"><span class=\\"_-outer\\">/<span class=\\"tag\\">div</span></span></span>&gt;
+
+&lt;<span class=\\"tag-outer\\"><span class=\\"_-outer\\"><span class=\\"tag\\">span</span></span> <span class=\\"attribute\\">id</span>=<span class=\\"string\\">&quot;hello world&quot;</span> <span class=\\"attribute\\">another</span>=<span class=\\"string\\">&quot;x&gt;&quot;</span> /</span>&gt;
+&lt;<span class=\\"tag-outer\\"><span class=\\"_-outer\\"><span class=\\"tag\\">span</span></span> <span class=\\"attribute\\">id</span>=<span class=\\"string\\">&quot;hello world&quot;</span> <span class=\\"attribute\\">another</span>=<span class=\\"string\\">&quot;&lt;x&gt;&quot;</span> /</span>&gt;
+
+&lt;<span class=\\"tag-outer\\"><span class=\\"_-outer\\"><span class=\\"tag\\">span</span></span> <span class=\\"attribute\\">id</span>=<span class=\\"string\\">&quot;hello world&quot;</span> <span class=\\"attribute\\">another</span>=<span class=\\"string\\">&quot;x&quot;</span> /</span>&gt;
+
+&lt;<span class=\\"tag-outer\\"><span class=\\"_-outer\\"><span class=\\"tag\\">script</span></span></span>&gt;<span class=\\"script-outer\\"><span class=\\"declare\\">Math</span>.<span class=\\"function\\">sin</span>(<span class=\\"number\\">440</span>)</span>&lt;<span class=\\"tag-outer\\"><span class=\\"_-outer\\">/<span class=\\"tag\\">script</span></span></span>&gt;
+
+&lt;<span class=\\"tag-outer\\"><span class=\\"_-outer\\"><span class=\\"tag\\">style</span></span></span>&gt;<span class=\\"style-outer\\"><span class=\\"tag\\">body</span><span class=\\"rules-outer\\">{<span class=\\"declare\\">background</span>:<span class=\\"value\\">red</span>}</span></span>&lt;<span class=\\"tag-outer\\"><span class=\\"_-outer\\">/<span class=\\"tag\\">style</span></span></span>&gt;
+
+&lt;<span class=\\"tag-outer\\"><span class=\\"_-outer\\"><span class=\\"tag\\">foo</span></span></span>&gt;&lt;<span class=\\"tag-outer\\"><span class=\\"_-outer\\"><span class=\\"tag\\">bar-hi</span></span> <span class=\\"attribute\\">hel-lo</span>=<span class=\\"string\\">&quot;one&quot;</span></span>&gt;&lt;<span class=\\"tag-outer\\"><span class=\\"_-outer\\">/<span class=\\"tag\\">bar</span></span></span>&gt;&lt;<span class=\\"tag-outer\\"><span class=\\"_-outer\\">/<span class=\\"tag\\">zoo</span></span></span>&gt;
+
+&lt;<span class=\\"tag-outer\\"><span class=\\"_-outer\\"><span class=\\"tag\\">pre</span></span></span>&gt;&lt;<span class=\\"tag-outer\\"><span class=\\"_-outer\\"><span class=\\"tag\\">code-syntax</span></span> <span class=\\"attribute\\">language</span>=<span class=\\"string\\">&quot;js&quot;</span> <span class=\\"attribute\\">theme</span>=<span class=\\"string\\">&quot;monokai&quot;</span></span>&gt;
+// a sine function
+function sine(time: number, hz: number): number {
+  return Math.sin(time * hz * Math.PI * 2)
+}
+&lt;<span class=\\"tag-outer\\"><span class=\\"_-outer\\">/<span class=\\"tag\\">code-syntax</span></span></span>&gt;&lt;<span class=\\"tag-outer\\"><span class=\\"_-outer\\">/<span class=\\"tag\\">pre</span></span></span>&gt;
+
+&lt;<span class=\\"tag-outer\\"><span class=\\"_-outer\\"><span class=\\"tag\\">foo</span></span></span>&gt;&lt;<span class=\\"tag-outer\\"><span class=\\"_-outer\\"><span class=\\"tag\\">bar</span></span> <span class=\\"attribute\\">hel-lo</span>=<span class=\\"string\\">&quot;one&quot;</span></span>&gt;&lt;<span class=\\"tag-outer\\"><span class=\\"_-outer\\">/<span class=\\"tag\\">bar</span></span></span>&gt;&lt;<span class=\\"tag-outer\\"><span class=\\"_-outer\\">/<span class=\\"tag\\">zoo</span></span></span>&gt;
+"
+`;
+
+exports[`js 1.txt 1`] = `
+"<span class=\\"keyword\\">import</span><span class=\\"imports-outer\\"> <span class=\\"builtin\\">*</span><span class=\\"keyword\\"> as </span>foo</span> <span class=\\"keyword\\">from</span> <span class=\\"string\\">&#39;hello&#39;</span>
+<span class=\\"keyword\\">import</span><span class=\\"imports-outer\\"> <span class=\\"builtin\\">*</span><span class=\\"keyword\\"> as </span>foo, { x<span class=\\"keyword\\"> as </span>y }</span> <span class=\\"keyword\\">from</span> <span class=\\"string\\">&#39;hello&#39;</span>
+<span class=\\"keyword\\">import</span><span class=\\"imports-outer\\"> { x<span class=\\"keyword\\"> as </span>y }, <span class=\\"builtin\\">*</span><span class=\\"keyword\\"> as </span>foo</span> <span class=\\"keyword\\">from</span> <span class=\\"string\\">&#39;hello&#39;</span>
+<span class=\\"keyword\\">import</span><span class=\\"imports-outer\\"> { compile, syntax, SyntaxDefinition }</span> <span class=\\"keyword\\">from</span> <span class=\\"string\\">&#39;./syntax&#39;</span>
+
+<span class=\\"declare\\">var</span> js <span class=\\"operator\\">=</span> <span class=\\"function\\">import</span>(<span class=\\"string\\">&#39;../languages/javascript&#39;</span>)
+
+<span class=\\"keyword\\">break</span> <span class=\\"keyword\\">do</span> <span class=\\"keyword\\">instanceof</span> <span class=\\"keyword\\">typeof</span> <span class=\\"keyword\\">case</span> <span class=\\"keyword\\">else</span> <span class=\\"keyword\\">new</span> <span class=\\"keyword\\">try</span> <span class=\\"keyword\\">catch</span> <span class=\\"keyword\\">finally</span>
+<span class=\\"keyword\\">return</span> <span class=\\"keyword\\">continue</span> <span class=\\"keyword\\">for</span> <span class=\\"keyword\\">of</span> <span class=\\"keyword\\">switch</span> <span class=\\"keyword\\">while</span> <span class=\\"keyword\\">with</span> <span class=\\"keyword\\">debugger</span> <span class=\\"keyword\\">default</span>
+<span class=\\"keyword\\">if</span> <span class=\\"keyword\\">throw</span> <span class=\\"keyword\\">delete</span> <span class=\\"keyword\\">in</span> <span class=\\"keyword\\">as</span> <span class=\\"keyword\\">from</span> <span class=\\"keyword\\">export</span> <span class=\\"keyword\\">import</span> <span class=\\"keyword\\">async</span> <span class=\\"keyword\\">await</span> <span class=\\"keyword\\">void</span>
+<span class=\\"keyword\\">extends</span> <span class=\\"keyword\\">implements</span> <span class=\\"keyword\\">private</span> <span class=\\"keyword\\">public</span> <span class=\\"keyword\\">package</span> <span class=\\"keyword\\">protected</span> <span class=\\"keyword\\">static</span>
+<span class=\\"keyword\\">declare</span> <span class=\\"keyword\\">yield</span>
+
+<span class=\\"declare\\">class</span> <span class=\\"function\\">Foo</span> {}
+<span class=\\"declare\\">class</span> <span class=\\"function\\">Foo</span> <span class=\\"keyword\\">extends</span> <span class=\\"function\\">Another</span> {}
+<span class=\\"declare\\">class</span> <span class=\\"function\\">Foo</span> <span class=\\"keyword\\">implements</span> <span class=\\"function\\">Other</span> {}
+<span class=\\"declare\\">class</span> <span class=\\"function\\">Foo</span> <span class=\\"keyword\\">extends</span> <span class=\\"function\\">Another</span> <span class=\\"keyword\\">implements</span> <span class=\\"function\\">Other</span> {}
+<span class=\\"declare\\">class</span> {}
+
+<span class=\\"declare\\">class</span> <span class=\\"declare\\">function</span> <span class=\\"declare\\">constructor</span> <span class=\\"declare\\">prototype</span>
+<span class=\\"declare\\">const</span> <span class=\\"declare\\">get</span> <span class=\\"declare\\">set</span> <span class=\\"declare\\">var</span> <span class=\\"declare\\">let</span> <span class=\\"declare\\">interface</span> <span class=\\"declare\\">type</span>
+<span class=\\"declare\\">enum</span> <span class=\\"declare\\">string</span> <span class=\\"declare\\">boolean</span> <span class=\\"declare\\">number</span> <span class=\\"declare\\">any</span> <span class=\\"declare\\">unknown</span> <span class=\\"declare\\">never</span>
+<span class=\\"declare\\">Object</span> <span class=\\"declare\\">String</span> <span class=\\"declare\\">Number</span> <span class=\\"declare\\">RegExp</span> <span class=\\"declare\\">Buffer</span> <span class=\\"declare\\">Math</span>
+
+<span class=\\"builtin\\">true</span> <span class=\\"builtin\\">false</span> <span class=\\"builtin\\">null</span> <span class=\\"builtin\\">undefined</span> <span class=\\"builtin\\">NaN</span> <span class=\\"builtin\\">Infinity</span>
+
+<span class=\\"special\\">this</span> <span class=\\"special\\">super</span>
+
+<span class=\\"operator\\">:</span> <span class=\\"operator\\">+</span> <span class=\\"operator\\">-</span> <span class=\\"operator\\">~</span> <span class=\\"operator\\">!</span>
+<span class=\\"operator\\">**</span> <span class=\\"operator\\">??</span> <span class=\\"operator\\">?.</span> <span class=\\"operator\\">&gt;&gt;</span> <span class=\\"operator\\">&lt;&lt;</span> <span class=\\"operator\\">&gt;&gt;</span><span class=\\"operator\\">&gt;</span> <span class=\\"operator\\">&lt;</span> <span class=\\"operator\\">&gt;</span> <span class=\\"operator\\">&lt;</span><span class=\\"operator\\">=</span> <span class=\\"operator\\">&gt;</span><span class=\\"operator\\">=</span> <span class=\\"operator\\">==</span> <span class=\\"operator\\">!</span><span class=\\"operator\\">=</span> <span class=\\"operator\\">==</span><span class=\\"operator\\">=</span> <span class=\\"operator\\">!</span><span class=\\"operator\\">==</span>
+<span class=\\"operator\\">&amp;&amp;</span> <span class=\\"operator\\">||</span> <span class=\\"operator\\">*=</span> <span class=\\"operator\\">/=</span> <span class=\\"operator\\">%=</span> <span class=\\"operator\\">+</span><span class=\\"operator\\">=</span> <span class=\\"operator\\">-</span><span class=\\"operator\\">=</span> <span class=\\"operator\\">&lt;&lt;</span><span class=\\"operator\\">=</span> <span class=\\"operator\\">&gt;&gt;</span><span class=\\"operator\\">=</span> <span class=\\"operator\\">&gt;&gt;</span><span class=\\"operator\\">&gt;</span><span class=\\"operator\\">=</span> <span class=\\"operator\\">&amp;=</span> <span class=\\"operator\\">^=</span> <span class=\\"operator\\">|=</span> <span class=\\"operator\\">**</span><span class=\\"operator\\">=</span>
+<span class=\\"operator\\">=</span> <span class=\\"operator\\">?</span> <span class=\\"operator\\">...</span> <span class=\\"operator\\">*</span> <span class=\\"operator\\">/</span> <span class=\\"operator\\">%</span> <span class=\\"operator\\">&amp;</span> <span class=\\"operator\\">^</span> <span class=\\"operator\\">|</span> <span class=\\"operator\\">+</span><span class=\\"operator\\">+</span> <span class=\\"operator\\">-</span><span class=\\"operator\\">-</span>
+"
+`;
+
+exports[`js 2.txt 1`] = `
+"<span class=\\"declare\\">function</span> <span class=\\"function\\">foo</span>(<span class=\\"arguments-outer\\"><span class=\\"arguments\\">a</span>, <span class=\\"arguments\\">b</span>, <span class=\\"arguments\\">c</span></span><span class=\\"arguments-outer\\"></span>) {}
+<span class=\\"declare\\">function</span> <span class=\\"function\\">foo</span>(<span class=\\"arguments-outer\\"><span class=\\"arguments\\">a</span><span class=\\"_-outer\\"><span class=\\"operator\\">:</span> <span class=\\"declare\\">number</span></span>, <span class=\\"arguments\\">b</span><span class=\\"_-outer\\"><span class=\\"operator\\">:</span> <span class=\\"declare\\">string</span></span></span><span class=\\"arguments-outer\\"></span>)<span class=\\"operator\\">:</span> <span class=\\"declare\\">boolean</span> {}
+
+<span class=\\"declare\\">const</span> <span class=\\"function\\">useState</span> <span class=\\"operator\\">=</span> <span class=\\"operator\\">&lt;</span>T<span class=\\"operator\\">&gt;</span>(<span class=\\"arguments-outer\\"><span class=\\"arguments\\">value</span><span class=\\"_-outer\\"><span class=\\"operator\\">:</span> T</span></span><span class=\\"arguments-outer\\"></span>) <span class=\\"arrow\\">=&gt;</span> <span class=\\"keyword\\">new</span> <span class=\\"function\\">HookState</span>(value)
+<span class=\\"declare\\">const</span> <span class=\\"function\\">foo</span> <span class=\\"operator\\">=</span> <span class=\\"operator\\">&lt;</span>T<span class=\\"operator\\">&gt;</span>(<span class=\\"arguments-outer\\"><span class=\\"arguments\\">a</span><span class=\\"_-outer\\"><span class=\\"operator\\">:</span> T</span>, <span class=\\"arguments\\">b</span></span><span class=\\"arguments-outer\\"></span>) <span class=\\"arrow\\">=&gt;</span> {}
+<span class=\\"declare\\">const</span> <span class=\\"function\\">foo</span> <span class=\\"operator\\">=</span> (<span class=\\"arguments-outer\\"><span class=\\"arguments\\">a</span><span class=\\"_-outer\\"><span class=\\"operator\\">:</span> <span class=\\"declare\\">number</span></span>, <span class=\\"arguments\\">b</span><span class=\\"_-outer\\"><span class=\\"operator\\">:</span> <span class=\\"declare\\">string</span></span></span><span class=\\"arguments-outer\\"></span>)<span class=\\"operator\\">:</span> <span class=\\"keyword\\">void</span> <span class=\\"arrow\\">=&gt;</span> {}
+
+<span class=\\"declare\\">const</span> a <span class=\\"operator\\">=</span> <span class=\\"number\\">10</span>
+
+<span class=\\"declare\\">class</span> <span class=\\"function\\">Foo</span> {
+  <span class=\\"declare\\">constructor</span>(<span class=\\"arguments-outer\\"><span class=\\"arguments\\">b</span><span class=\\"_-outer\\"><span class=\\"operator\\">:</span> Foo</span> <span class=\\"_-outer\\"><span class=\\"operator\\">=</span> <span class=\\"number\\">42</span></span>, <span class=\\"arguments\\">a</span><span class=\\"operator\\">:</span> (</span><span class=\\"arguments-outer\\"></span>) <span class=\\"arrow\\">=&gt;</span> <span class=\\"function\\">Foo</span><span class=\\"operator\\">&lt;</span>T<span class=\\"operator\\">&gt;</span>) {
+  }
+ 
+  <span class=\\"function\\">method</span>(<span class=\\"arguments-outer\\"><span class=\\"arguments\\">a</span><span class=\\"_-outer\\"><span class=\\"operator\\">:</span> <span class=\\"declare\\">number</span></span> <span class=\\"_-outer\\"><span class=\\"operator\\">=</span> <span class=\\"number\\">15</span></span>, <span class=\\"arguments\\">b</span><span class=\\"operator\\">?</span><span class=\\"_-outer\\"><span class=\\"operator\\">:</span> <span class=\\"declare\\">string</span></span> <span class=\\"operator\\">=</span> <span class=\\"string\\">&#39;hello&#39;</span></span><span class=\\"arguments-outer\\"></span>) {  
+  }
+
+  <span class=\\"function\\">another</span>(<span class=\\"arguments-outer\\"><span class=\\"arguments\\">a</span><span class=\\"_-outer\\"><span class=\\"operator\\">:</span> <span class=\\"declare\\">number</span></span>, <span class=\\"arguments\\">b</span><span class=\\"operator\\">?</span><span class=\\"_-outer\\"><span class=\\"operator\\">:</span> <span class=\\"declare\\">string</span></span></span><span class=\\"arguments-outer\\"></span>) {  
+  }
+}
+
+<span class=\\"keyword\\">if</span> (<span class=\\"function\\">fn</span>(something)) {}
+"
+`;
+
+exports[`js 3.txt 1`] = `
+"<span class=\\"keyword\\">import</span><span class=\\"imports-outer\\"> { VHook, current }</span> <span class=\\"keyword\\">from</span> <span class=\\"string\\">&#39;@stagas/vele&#39;</span>
+<span class=\\"keyword\\">import</span><span class=\\"imports-outer\\"> { debounce }</span> <span class=\\"keyword\\">from</span> <span class=\\"string\\">&#39;debounce-micro&#39;</span>
+
+<span class=\\"keyword\\">export</span> <span class=\\"declare\\">interface</span> <span class=\\"function\\">StateValue</span><span class=\\"operator\\">&lt;</span>T<span class=\\"operator\\">&gt;</span> {
+  <span class=\\"declare\\">get</span>()<span class=\\"operator\\">:</span> T
+  <span class=\\"declare\\">set</span>(<span class=\\"property\\">value</span><span class=\\"operator\\">:</span> T)<span class=\\"operator\\">:</span> <span class=\\"keyword\\">void</span>
+}
+
+<span class=\\"keyword\\">export</span> <span class=\\"declare\\">class</span> <span class=\\"function\\">HookState</span><span class=\\"operator\\">&lt;</span>T<span class=\\"operator\\">&gt;</span> <span class=\\"keyword\\">implements</span> <span class=\\"function\\">StateValue</span><span class=\\"operator\\">&lt;</span>T<span class=\\"operator\\">&gt;</span> {
+  <span class=\\"property\\">value</span><span class=\\"operator\\">:</span> T
+
+  #<span class=\\"property\\">hooks</span><span class=\\"operator\\">:</span> <span class=\\"declare\\">Set</span><span class=\\"operator\\">&lt;</span>VHook<span class=\\"operator\\">&gt;</span> <span class=\\"operator\\">=</span> <span class=\\"keyword\\">new</span> <span class=\\"declare\\">Set</span>()
+
+  <span class=\\"declare\\">constructor</span>(<span class=\\"arguments-outer\\"><span class=\\"arguments\\">initialValue</span><span class=\\"_-outer\\"><span class=\\"operator\\">:</span> T</span></span><span class=\\"arguments-outer\\"></span>) {
+    <span class=\\"special\\">this</span>.value <span class=\\"operator\\">=</span> initialValue
+  }
+
+  <span class=\\"declare\\">get</span>(<span class=\\"arguments-outer\\"></span>) {
+    <span class=\\"declare\\">const</span> hook <span class=\\"operator\\">=</span> current.hook
+    <span class=\\"keyword\\">if</span> (hook) <span class=\\"special\\">this</span>.#hooks.<span class=\\"function\\">add</span>(hook)
+    <span class=\\"keyword\\">return</span> <span class=\\"special\\">this</span>.value
+  }
+
+  <span class=\\"declare\\">set</span>(<span class=\\"arguments-outer\\"><span class=\\"arguments\\">newValue</span><span class=\\"_-outer\\"><span class=\\"operator\\">:</span> T</span></span><span class=\\"arguments-outer\\"></span>) {
+    <span class=\\"special\\">this</span>.value <span class=\\"operator\\">=</span> newValue
+    <span class=\\"special\\">this</span>.<span class=\\"function\\">trigger</span>()
+  }
+
+  trigger <span class=\\"operator\\">=</span> <span class=\\"function\\">debounce</span>(<span class=\\"arguments-outer\\">(</span><span class=\\"arguments-outer\\"></span>) <span class=\\"arrow\\">=&gt;</span> {
+    <span class=\\"special\\">this</span>.#hooks.<span class=\\"function\\">forEach</span>(<span class=\\"arguments-outer\\"><span class=\\"arguments\\">hook</span> </span><span class=\\"arrow\\">=&gt;</span> hook.<span class=\\"function\\">trigger</span>())
+  })
+}
+
+<span class=\\"keyword\\">export</span> <span class=\\"declare\\">const</span> <span class=\\"function\\">useState</span> <span class=\\"operator\\">=</span> <span class=\\"operator\\">&lt;</span>T<span class=\\"operator\\">&gt;</span>(<span class=\\"arguments-outer\\"><span class=\\"arguments\\">value</span><span class=\\"_-outer\\"><span class=\\"operator\\">:</span> T</span></span><span class=\\"arguments-outer\\"></span>) <span class=\\"arrow\\">=&gt;</span> <span class=\\"keyword\\">new</span> <span class=\\"function\\">HookState</span>(value)
+
+<span class=\\"keyword\\">export</span> <span class=\\"declare\\">const</span> <span class=\\"function\\">useLocalStorage</span> <span class=\\"operator\\">=</span> <span class=\\"operator\\">&lt;</span>T<span class=\\"operator\\">&gt;</span>(<span class=\\"arguments-outer\\"><span class=\\"arguments\\">name</span><span class=\\"_-outer\\"><span class=\\"operator\\">:</span> <span class=\\"declare\\">string</span></span>, <span class=\\"arguments\\">value</span><span class=\\"_-outer\\"><span class=\\"operator\\">:</span> T</span></span><span class=\\"arguments-outer\\"></span>)<span class=\\"operator\\">:</span> <span class=\\"function\\">StateValue</span><span class=\\"operator\\">&lt;</span>T<span class=\\"operator\\">&gt;</span> <span class=\\"arrow\\">=&gt;</span> {
+  <span class=\\"keyword\\">if</span> (localStorage[name]) value <span class=\\"operator\\">=</span> localStorage[name]
+  <span class=\\"declare\\">const</span> state <span class=\\"operator\\">=</span> <span class=\\"function\\">useState</span>(value)
+  <span class=\\"keyword\\">return</span> {
+    <span class=\\"declare\\">get</span>(<span class=\\"arguments-outer\\"></span>)<span class=\\"operator\\">:</span> T {
+      <span class=\\"keyword\\">return</span> state.<span class=\\"declare\\">get</span>()
+    },
+    <span class=\\"declare\\">set</span>(<span class=\\"arguments-outer\\"><span class=\\"arguments\\">newValue</span><span class=\\"_-outer\\"><span class=\\"operator\\">:</span> T</span></span><span class=\\"arguments-outer\\"></span>) {
+      state.<span class=\\"declare\\">set</span>((localStorage[name] <span class=\\"operator\\">=</span> newValue))
+    },
+  }
+}
+
+<span class=\\"keyword\\">export</span> <span class=\\"declare\\">class</span> <span class=\\"function\\">AsyncContext</span><span class=\\"operator\\">&lt;</span>T<span class=\\"operator\\">&gt;</span> {
+  hasLoaded <span class=\\"operator\\">=</span> <span class=\\"builtin\\">false</span>
+  isLoading <span class=\\"operator\\">=</span> <span class=\\"builtin\\">false</span>
+  error<span class=\\"operator\\">?</span><span class=\\"operator\\">:</span> Error
+  value<span class=\\"operator\\">?</span><span class=\\"operator\\">:</span> T
+  <span class=\\"property\\">promise</span><span class=\\"operator\\">:</span> <span class=\\"function\\">Promise</span><span class=\\"operator\\">&lt;</span><span class=\\"function\\">HookState</span><span class=\\"operator\\">&lt;</span><span class=\\"function\\">AsyncContext</span><span class=\\"operator\\">&lt;</span>T<span class=\\"operator\\">&gt;&gt;</span><span class=\\"operator\\">&gt;</span>
+  #resolve<span class=\\"operator\\">!</span><span class=\\"operator\\">:</span> (<span class=\\"arguments-outer\\"><span class=\\"arguments\\">value</span><span class=\\"_-outer\\"><span class=\\"operator\\">:</span> HookState</span><span class=\\"_-outer\\"><span class=\\"operator\\">&lt;</span>AsyncContext</span><span class=\\"_-outer\\"><span class=\\"operator\\">&lt;</span>T</span><span class=\\"operator\\">&gt;&gt;</span></span><span class=\\"arguments-outer\\"></span>) <span class=\\"arrow\\">=&gt;</span> <span class=\\"keyword\\">void</span>
+  #reject<span class=\\"operator\\">!</span><span class=\\"operator\\">:</span> (<span class=\\"arguments-outer\\"><span class=\\"arguments\\">error</span><span class=\\"_-outer\\"><span class=\\"operator\\">:</span> Error</span></span><span class=\\"arguments-outer\\"></span>) <span class=\\"arrow\\">=&gt;</span> <span class=\\"keyword\\">void</span>
+
+  #<span class=\\"property\\">state</span><span class=\\"operator\\">:</span> <span class=\\"function\\">HookState</span><span class=\\"operator\\">&lt;</span><span class=\\"function\\">AsyncContext</span><span class=\\"operator\\">&lt;</span>T<span class=\\"operator\\">&gt;&gt;</span>
+  #<span class=\\"property\\">initializer</span><span class=\\"operator\\">:</span> (<span class=\\"arguments-outer\\"></span>) <span class=\\"arrow\\">=&gt;</span> <span class=\\"function\\">Promise</span><span class=\\"operator\\">&lt;</span>T<span class=\\"operator\\">&gt;</span>
+
+  <span class=\\"declare\\">constructor</span>(<span class=\\"arguments-outer\\"><span class=\\"arguments\\">initializer</span><span class=\\"operator\\">:</span> (</span><span class=\\"arguments-outer\\"></span>) <span class=\\"arrow\\">=&gt;</span> <span class=\\"function\\">Promise</span><span class=\\"operator\\">&lt;</span>T<span class=\\"operator\\">&gt;</span>) {
+    <span class=\\"special\\">this</span>.#initializer <span class=\\"operator\\">=</span> initializer
+    <span class=\\"special\\">this</span>.#state <span class=\\"operator\\">=</span> <span class=\\"function\\">useState</span>(<span class=\\"special\\">this</span>)
+    <span class=\\"special\\">this</span>.promise <span class=\\"operator\\">=</span> <span class=\\"keyword\\">new</span> <span class=\\"function\\">Promise</span>(<span class=\\"arguments-outer\\">(<span class=\\"arguments\\">resolve</span>, <span class=\\"arguments\\">reject</span></span><span class=\\"arguments-outer\\"></span>) <span class=\\"arrow\\">=&gt;</span> {
+      <span class=\\"special\\">this</span>.#resolve <span class=\\"operator\\">=</span> resolve
+      <span class=\\"special\\">this</span>.#reject <span class=\\"operator\\">=</span> reject
+    })
+  }
+
+  <span class=\\"declare\\">get</span>(<span class=\\"arguments-outer\\"></span>) {
+    <span class=\\"special\\">this</span>.<span class=\\"function\\">load</span>()
+    <span class=\\"keyword\\">return</span> <span class=\\"special\\">this</span>.#state.<span class=\\"declare\\">get</span>()
+  }
+
+  <span class=\\"declare\\">set</span>(<span class=\\"arguments-outer\\"><span class=\\"arguments\\">value</span><span class=\\"_-outer\\"><span class=\\"operator\\">:</span> T</span></span><span class=\\"arguments-outer\\"></span>) {
+    <span class=\\"special\\">this</span>.value <span class=\\"operator\\">=</span> value
+    <span class=\\"special\\">this</span>.#state.<span class=\\"declare\\">set</span>(<span class=\\"special\\">this</span>)
+  }
+
+  <span class=\\"function\\">load</span>(<span class=\\"arguments-outer\\"></span>) {
+    <span class=\\"keyword\\">if</span> (<span class=\\"operator\\">!</span><span class=\\"special\\">this</span>.hasLoaded <span class=\\"operator\\">&amp;&amp;</span> <span class=\\"operator\\">!</span><span class=\\"special\\">this</span>.isLoading) {
+      <span class=\\"special\\">this</span>.isLoading <span class=\\"operator\\">=</span> <span class=\\"builtin\\">true</span>
+      <span class=\\"special\\">this</span>.<span class=\\"function\\">#initializer</span>()
+        .<span class=\\"function\\">then</span>(<span class=\\"arguments-outer\\"><span class=\\"arguments\\">value</span> </span><span class=\\"arrow\\">=&gt;</span><span class=\\"arguments-outer\\"> </span><span class=\\"arguments-outer\\"></span>{
+          <span class=\\"special\\">this</span>.hasLoaded <span class=\\"operator\\">=</span> <span class=\\"builtin\\">true</span>
+          <span class=\\"special\\">this</span>.isLoading <span class=\\"operator\\">=</span> <span class=\\"builtin\\">false</span>
+          <span class=\\"special\\">this</span>.value <span class=\\"operator\\">=</span> value
+          <span class=\\"special\\">this</span>.#state.<span class=\\"declare\\">set</span>(<span class=\\"special\\">this</span>)
+          <span class=\\"special\\">this</span>.<span class=\\"function\\">#resolve</span>(<span class=\\"special\\">this</span>.#state)
+        })
+        .<span class=\\"function\\">catch</span>(<span class=\\"arguments-outer\\">(<span class=\\"arguments\\">error</span><span class=\\"_-outer\\"><span class=\\"operator\\">:</span> Error</span></span><span class=\\"arguments-outer\\"></span>) <span class=\\"arrow\\">=&gt;</span> {
+          <span class=\\"special\\">this</span>.isLoading <span class=\\"operator\\">=</span> <span class=\\"builtin\\">false</span>
+          <span class=\\"special\\">this</span>.error <span class=\\"operator\\">=</span> error
+          <span class=\\"special\\">this</span>.<span class=\\"function\\">#reject</span>(error)
+        })
+    }
+  }
+
+  <span class=\\"function\\">refresh</span>(<span class=\\"arguments-outer\\"></span>) {
+    <span class=\\"keyword\\">if</span> (<span class=\\"operator\\">!</span><span class=\\"special\\">this</span>.isLoading) {
+      <span class=\\"special\\">this</span>.hasLoaded <span class=\\"operator\\">=</span> <span class=\\"builtin\\">false</span>
+      <span class=\\"special\\">this</span>.<span class=\\"function\\">load</span>()
+    }
+  }
+
+  <span class=\\"keyword\\">async</span> <span class=\\"function\\">whenLoaded</span>(<span class=\\"arguments-outer\\"></span>) {
+    <span class=\\"keyword\\">return</span> (<span class=\\"keyword\\">await</span> <span class=\\"special\\">this</span>.<span class=\\"declare\\">get</span>().promise).<span class=\\"declare\\">get</span>().value<span class=\\"operator\\">!</span>
+  }
+}
+
+<span class=\\"keyword\\">export</span> <span class=\\"declare\\">const</span> <span class=\\"function\\">useAsyncContext</span> <span class=\\"operator\\">=</span> <span class=\\"operator\\">&lt;</span>T<span class=\\"operator\\">&gt;</span>(<span class=\\"arguments-outer\\"><span class=\\"arguments\\">initializer</span><span class=\\"operator\\">:</span> (</span><span class=\\"arguments-outer\\"></span>) <span class=\\"arrow\\">=&gt;</span> <span class=\\"function\\">Promise</span><span class=\\"operator\\">&lt;</span>T<span class=\\"operator\\">&gt;</span>) <span class=\\"arrow\\">=&gt;</span> {
+  <span class=\\"declare\\">const</span> context <span class=\\"operator\\">=</span> <span class=\\"keyword\\">new</span> <span class=\\"function\\">AsyncContext</span>(initializer)
+  <span class=\\"keyword\\">return</span> (<span class=\\"arguments-outer\\"></span>)<span class=\\"operator\\">:</span> <span class=\\"function\\">AsyncContext</span><span class=\\"operator\\">&lt;</span>T<span class=\\"operator\\">&gt;</span> <span class=\\"arrow\\">=&gt;</span> context
+}
+
+<span class=\\"keyword\\">export</span> <span class=\\"declare\\">interface</span> <span class=\\"function\\">Collection</span><span class=\\"operator\\">&lt;</span>T<span class=\\"operator\\">&gt;</span> {
+  <span class=\\"declare\\">get</span>(<span class=\\"property\\">id</span><span class=\\"operator\\">:</span> <span class=\\"declare\\">string</span>)<span class=\\"operator\\">:</span> T
+}
+
+<span class=\\"keyword\\">export</span> <span class=\\"declare\\">const</span> <span class=\\"function\\">useCollection</span> <span class=\\"operator\\">=</span> <span class=\\"operator\\">&lt;</span>T<span class=\\"operator\\">&gt;</span>(<span class=\\"arguments-outer\\"><span class=\\"arguments\\">creator</span><span class=\\"operator\\">:</span> (<span class=\\"arguments\\">id</span><span class=\\"_-outer\\"><span class=\\"operator\\">:</span> <span class=\\"declare\\">string</span></span></span><span class=\\"arguments-outer\\"></span>) <span class=\\"arrow\\">=&gt;</span> T)<span class=\\"operator\\">:</span> <span class=\\"function\\">Collection</span><span class=\\"operator\\">&lt;</span>T<span class=\\"operator\\">&gt;</span> <span class=\\"arrow\\">=&gt;</span> {
+  <span class=\\"declare\\">const</span> <span class=\\"property\\">map</span><span class=\\"operator\\">:</span> <span class=\\"declare\\">Map</span><span class=\\"operator\\">&lt;</span><span class=\\"declare\\">string</span>, T<span class=\\"operator\\">&gt;</span> <span class=\\"operator\\">=</span> <span class=\\"keyword\\">new</span> <span class=\\"declare\\">Map</span>()
+  <span class=\\"keyword\\">return</span> {
+    <span class=\\"declare\\">get</span>(<span class=\\"arguments-outer\\"><span class=\\"arguments\\">id</span><span class=\\"_-outer\\"><span class=\\"operator\\">:</span> <span class=\\"declare\\">string</span></span></span><span class=\\"arguments-outer\\"></span>) {
+      <span class=\\"declare\\">let</span> item <span class=\\"operator\\">=</span> map.<span class=\\"declare\\">get</span>(id)
+      <span class=\\"keyword\\">if</span> (item) <span class=\\"keyword\\">return</span> item
+
+      item <span class=\\"operator\\">=</span> <span class=\\"function\\">creator</span>(id)
+      map.<span class=\\"declare\\">set</span>(id, item)
+      <span class=\\"keyword\\">return</span> item
+    },
+  }
+}
+"
+`;

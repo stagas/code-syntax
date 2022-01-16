@@ -1,0 +1,102 @@
+{
+  "name": "code-syntax",
+  "author": "stagas",
+  "short": "stagas/code-syntax",
+  "description": "code syntax highlight custom element",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://git@github.com:stagas/code-syntax.git"
+  },
+  "keywords": [
+    "syntax",
+    "highlight",
+    "custom-element",
+    "web-component"
+  ],
+  "module": "dist/esm/index.js",
+  "main": "dist/cjs/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    },
+    "./themes/*": "./themes/*",
+    "./languages/*": "./languages/*"
+  },
+  "typesVersions": {
+    "*": {
+      "themes/*": [
+        "./types/themes.d.ts"
+      ],
+      "languages/*": [
+        "./types/languages.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist",
+    "languages",
+    "themes",
+    "types"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run build:cjs && npm run build:esm && echo done.",
+    "docs": "documentation readme src --resolve=node --pe ts --re ts --re d.ts --github --section=API --markdown-toc-max-depth=3",
+    "docs:site": "npm run docs -- --readme-file site/pages/index.md",
+    "test": "jest",
+    "test:web": "web-test-runner",
+    "cov": "jest --coverage",
+    "lint": "eslint src && prettier --check src",
+    "docs:watch": "onchange -i src --await-write-finish 400 -- npm run docs",
+    "test:watch": "jest --watchAll",
+    "cov:watch": "jest --coverage --watchAll",
+    "bench:watch": "fpick benchmark --repeat -- onchange -i src 'benchmark/**/*.{js,jsx,ts,tsx}' --await-write-finish 400 --kill -- node -r esbuild-register",
+    "example:watch": "fpick example --repeat -- onchange -i src example --await-write-finish 400 --kill -- node -r esbuild-register",
+    "build:watch": "npm run build:cjs:watch & npm run build:esm:watch",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:cjs:watch": "tsc -p tsconfig.cjs.json --watch",
+    "build:esm": "tsc -p tsconfig.esm.json && echo '{\"type\":\"module\"}' >dist/esm/package.json",
+    "build:esm:watch": "tsc -p tsconfig.esm.json --watch",
+    "build:min": "esbuild src/index.ts --bundle --format=esm | terser --compress --module --mangle -o code-syntax.min.js",
+    "build:lang:esm": "node -r esbuild-register scripts/compile.ts esm dist/esm/languages languages/*",
+    "build:lang:cjs": "node -r esbuild-register scripts/compile.ts cjs dist/cjs/languages languages/*",
+    "lint:fix": "eslint --fix src && prettier --write src",
+    "clean": "rimraf dist",
+    "prepack": "npm run build",
+    "prepack:dry": "npm pack --dry-run",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@stagas/documentation-fork": "^13.2.5",
+    "@stagas/sucrase-jest-plugin": "^2.2.0-fork",
+    "@swc-node/jest": "^1.4.3",
+    "@tsconfig/node16": "^1.0.2",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^17.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
+    "@web/dev-server-esbuild": "^0.2.16",
+    "@web/test-runner": "^0.13.23",
+    "esbuild": "^0.14.9",
+    "esbuild-register": "^3.3.1",
+    "eslint": "^8.5.0",
+    "eslint-config-html-jsx": "^1.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-redos": "^4.1.1",
+    "fpick": "^1.1.0",
+    "husky": "^7.0.4",
+    "jest": "^27.4.5",
+    "jest-browser-globals": "^25.1.0-beta",
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
+    "terser": "^5.10.0",
+    "ts-jest": "^27.1.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "html-escaper": "^3.0.3"
+  }
+}

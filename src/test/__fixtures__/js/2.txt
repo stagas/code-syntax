@@ -1,0 +1,21 @@
+function foo(a, b, c) {}
+function foo(a: number, b: string): boolean {}
+
+const useState = <T>(value: T) => new HookState(value)
+const foo = <T>(a: T, b) => {}
+const foo = (a: number, b: string): void => {}
+
+const a = 10
+
+class Foo {
+  constructor(b: Foo = 42, a: () => Foo<T>) {
+  }
+ 
+  method(a: number = 15, b?: string = 'hello') {  
+  }
+
+  another(a: number, b?: string) {  
+  }
+}
+
+if (fn(something)) {}

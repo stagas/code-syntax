@@ -1,0 +1,132 @@
+import { VHook, current } from '@stagas/vele'
+import { debounce } from 'debounce-micro'
+
+export interface StateValue<T> {
+  get(): T
+  set(value: T): void
+}
+
+export class HookState<T> implements StateValue<T> {
+  value: T
+
+  #hooks: Set<VHook> = new Set()
+
+  constructor(initialValue: T) {
+    this.value = initialValue
+  }
+
+  get() {
+    const hook = current.hook
+    if (hook) this.#hooks.add(hook)
+    return this.value
+  }
+
+  set(newValue: T) {
+    this.value = newValue
+    this.trigger()
+  }
+
+  trigger = debounce(() => {
+    this.#hooks.forEach(hook => hook.trigger())
+  })
+}
+
+export const useState = <T>(value: T) => new HookState(value)
+
+export const useLocalStorage = <T>(name: string, value: T): StateValue<T> => {
+  if (localStorage[name]) value = localStorage[name]
+  const state = useState(value)
+  return {
+    get(): T {
+      return state.get()
+    },
+    set(newValue: T) {
+      state.set((localStorage[name] = newValue))
+    },
+  }
+}
+
+export class AsyncContext<T> {
+  hasLoaded = false
+  isLoading = false
+  error?: Error
+  value?: T
+  promise: Promise<HookState<AsyncContext<T>>>
+  #resolve!: (value: HookState<AsyncContext<T>>) => void
+  #reject!: (error: Error) => void
+
+  #state: HookState<AsyncContext<T>>
+  #initializer: () => Promise<T>
+
+  constructor(initializer: () => Promise<T>) {
+    this.#initializer = initializer
+    this.#state = useState(this)
+    this.promise = new Promise((resolve, reject) => {
+      this.#resolve = resolve
+      this.#reject = reject
+    })
+  }
+
+  get() {
+    this.load()
+    return this.#state.get()
+  }
+
+  set(value: T) {
+    this.value = value
+    this.#state.set(this)
+  }
+
+  load() {
+    if (!this.hasLoaded && !this.isLoading) {
+      this.isLoading = true
+      this.#initializer()
+        .then(value => {
+          this.hasLoaded = true
+          this.isLoading = false
+          this.value = value
+          this.#state.set(this)
+          this.#resolve(this.#state)
+        })
+        .catch((error: Error) => {
+          this.isLoading = false
+          this.error = error
+          this.#reject(error)
+        })
+    }
+  }
+
+  refresh() {
+    if (!this.isLoading) {
+      this.hasLoaded = false
+      this.load()
+    }
+  }
+
+  async whenLoaded() {
+    return (await this.get().promise).get().value!
+  }
+}
+
+export const useAsyncContext = <T>(initializer: () => Promise<T>) => {
+  const context = new AsyncContext(initializer)
+  return (): AsyncContext<T> => context
+}
+
+export interface Collection<T> {
+  get(id: string): T
+}
+
+export const useCollection = <T>(creator: (id: string) => T): Collection<T> => {
+  const map: Map<string, T> = new Map()
+  return {
+    get(id: string) {
+      let item = map.get(id)
+      if (item) return item
+
+      item = creator(id)
+      map.set(id, item)
+      return item
+    },
+  }
+}

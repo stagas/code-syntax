@@ -1,0 +1,21 @@
+<div></div>
+
+<span id="hello world" another="x>" />
+<span id="hello world" another="<x>" />
+
+<span id="hello world" another="x" />
+
+<script>Math.sin(440)</script>
+
+<style>body{background:red}</style>
+
+<foo><bar-hi hel-lo="one"></bar></zoo>
+
+<pre><code-syntax language="js" theme="monokai">
+// a sine function
+function sine(time: number, hz: number): number {
+  return Math.sin(time * hz * Math.PI * 2)
+}
+</code-syntax></pre>
+
+<foo><bar hel-lo="one"></bar></zoo>

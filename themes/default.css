@@ -1,0 +1,28 @@
+[language='css'],
+[language='html'],
+[language='js'] {
+  --color: var(--foreground);
+  --selection: var(--selectionBackground, #15d);
+
+  --comment: var(--brightBlack);
+  --string: var(--brightYellow);
+  --function: var(--green);
+  --punctuation: var(--color);
+  --number: var(--blue);
+  --property: var(--green);
+  --arguments: var(--yellow);
+  --operator: var(--brightRed);
+  --builtin: var(--number);
+  --keyword: var(--brightRed);
+  --declare: var(--cyan);
+  --arrow: var(--cyan);
+  --value: var(--cyan);
+  --special: var(--yellow);
+  --regexp: var(--brightPurple);
+  --tag: var(--brightRed);
+  --attribute: var(--green);
+
+  --declare-style: italic;
+  --arrow-style: italic;
+  --arguments-style: italic;
+}

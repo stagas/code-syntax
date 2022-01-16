@@ -1,0 +1,28 @@
+/* a comment */
+
+:root {
+  --primary: #666;
+  --with-dash: #444;
+}
+
+div {
+  color: blue;
+  overflow: hidden
+}
+
+.class {
+  background-color: var(--primary);
+}
+
+#id {
+  overflow: hidden;
+  width: 1vmax;
+  height: 1vmin;
+}
+
+body[theme='thing'] > #id {
+  color: black;
+}
+
+body{background:red}
+body{background:red;}
