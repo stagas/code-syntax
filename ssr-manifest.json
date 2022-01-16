@@ -16,84 +16,84 @@
   "client.ts": [],
   "index.html": [],
   "node_modules/construct-style-sheets-polyfill/dist/adoptedStyleSheets.js": [
-    "/assets/vendor.999869ae.js"
+    "/code-syntax/assets/vendor.999869ae.js"
   ],
   "node_modules/scoped-registries/src/constants.js": [
-    "/assets/vendor.999869ae.js"
+    "/code-syntax/assets/vendor.999869ae.js"
   ],
   "node_modules/scoped-registries/src/createUniqueTag.js": [
-    "/assets/vendor.999869ae.js"
+    "/code-syntax/assets/vendor.999869ae.js"
   ],
   "node_modules/scoped-registries/src/definitionsRegistry.js": [
-    "/assets/vendor.999869ae.js"
+    "/code-syntax/assets/vendor.999869ae.js"
   ],
   "node_modules/scoped-registries/src/polyfillCustomElementRegistry.js": [
-    "/assets/vendor.999869ae.js"
+    "/code-syntax/assets/vendor.999869ae.js"
   ],
   "node_modules/scoped-registries/src/ScopedCustomElementRegistry.js": [
-    "/assets/vendor.999869ae.js"
+    "/code-syntax/assets/vendor.999869ae.js"
   ],
   "node_modules/scoped-registries/src/cssTransform.js": [
-    "/assets/vendor.999869ae.js"
+    "/code-syntax/assets/vendor.999869ae.js"
   ],
   "node_modules/scoped-registries/src/htmlTransform.js": [
-    "/assets/vendor.999869ae.js"
+    "/code-syntax/assets/vendor.999869ae.js"
   ],
   "node_modules/scoped-registries/src/polyfillShadowRoot.js": [
-    "/assets/vendor.999869ae.js"
+    "/code-syntax/assets/vendor.999869ae.js"
   ],
   "node_modules/scoped-registries/src/HTMLCollection.js": [
-    "/assets/vendor.999869ae.js"
+    "/code-syntax/assets/vendor.999869ae.js"
   ],
   "node_modules/scoped-registries/src/polyfillElement.js": [
-    "/assets/vendor.999869ae.js"
+    "/code-syntax/assets/vendor.999869ae.js"
   ],
   "node_modules/scoped-registries/src/polyfillCSSStyleSheet.js": [
-    "/assets/vendor.999869ae.js"
+    "/code-syntax/assets/vendor.999869ae.js"
   ],
   "node_modules/scoped-registries/index.js": [
-    "/assets/vendor.999869ae.js"
+    "/code-syntax/assets/vendor.999869ae.js"
   ],
   "../node_modules/html-escaper/esm/index.js": [
-    "/assets/vendor.999869ae.js"
+    "/code-syntax/assets/vendor.999869ae.js"
   ],
   "../../code-edit/node_modules/debounce-micro/dist/esm/index.js": [
-    "/assets/vendor.999869ae.js"
+    "/code-syntax/assets/vendor.999869ae.js"
   ],
   "node_modules/icon-svg/dist/esm/data.js": [
-    "/assets/vendor.999869ae.js"
+    "/code-syntax/assets/vendor.999869ae.js"
   ],
   "node_modules/icon-svg/dist/esm/element.js": [
-    "/assets/vendor.999869ae.js"
+    "/code-syntax/assets/vendor.999869ae.js"
   ],
   "node_modules/memoize-pure/dist/esm/index.js": [
-    "/assets/vendor.999869ae.js"
+    "/code-syntax/assets/vendor.999869ae.js"
   ],
   "node_modules/icon-svg/dist/esm/fetch.js": [
-    "/assets/vendor.999869ae.js"
+    "/code-syntax/assets/vendor.999869ae.js"
   ],
   "node_modules/icon-svg/dist/esm/types.js": [
-    "/assets/vendor.999869ae.js"
+    "/code-syntax/assets/vendor.999869ae.js"
   ],
   "node_modules/icon-svg/dist/esm/index.js": [
-    "/assets/vendor.999869ae.js"
+    "/code-syntax/assets/vendor.999869ae.js"
   ],
   "../languages/util.js": [
-    "/assets/js.e37911d6.js"
+    "/code-syntax/assets/js.e37911d6.js"
   ],
   "../languages/js.js": [
-    "/assets/js.e37911d6.js"
+    "/code-syntax/assets/js.e37911d6.js"
   ],
   "../languages/css.js": [
-    "/assets/css.814540ef.js"
+    "/code-syntax/assets/css.814540ef.js"
   ],
   "../languages/html.js": [
-    "/assets/html.aadf1282.js"
+    "/code-syntax/assets/html.aadf1282.js"
   ],
   "pages/index.md": [
-    "/assets/app.fe1a4a76.js"
+    "/code-syntax/assets/app.fe1a4a76.js"
   ],
   "app.ts": [
-    "/assets/app.fe1a4a76.js"
+    "/code-syntax/assets/app.fe1a4a76.js"
   ]
 }
