@@ -1,0 +1,1 @@
+import t from"./css.814540ef.js";import{R as s}from"./js.e37911d6.js";var i={script:[/(?<=<script[^>]*?>)[^]*?(?=<\/script>)/,s],style:[/(?<=<style[^>]*?>)[^]*?(?=<\/style>)/,t],comment:/<!--[^]*?-->|<!--[^]*/,tag:[/(?<=<\/?)([^<]*?(".+?")[^<]*|([^>]*))(?=>)/,{_:[/^[/!]?[\w-]+/,{tag:/[\w-]+/}],string:/".*?"/,attribute:/[\w-]+/}]};export{i as default};
