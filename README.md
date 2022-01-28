@@ -13,7 +13,7 @@ code syntax highlight custom element
  · <a href="https://github.com/stagas/code-syntax/issues">   🖐️ <strong>Help</strong></a>
 </p>
 
----
+***
 
 ## Install
 
@@ -58,15 +58,15 @@ class Vector {
 
 #### Table of Contents
 
-- [CodeSyntaxElement](#codesyntaxelement)
-- [compile](#compile)
-  - [Parameters](#parameters)
-- [syntax](#syntax)
-  - [Parameters](#parameters-1)
+*   [CodeSyntaxElement](#codesyntaxelement)
+*   [compile](#compile)
+    *   [Parameters](#parameters)
+*   [syntax](#syntax)
+    *   [Parameters](#parameters-1)
 
 ### CodeSyntaxElement
 
-[src/element.ts:44-116](https://github.com/stagas/code-syntax/blob/f7d7a13ded13fbcfecd54aa9aa0d02e98c18ef4e/src/element.ts#L44-L116 'Source code on GitHub')
+[src/element.ts:50-123](https://github.com/stagas/code-syntax/blob/51b37e0d1389f9bf691c9ef6e9f47df1c29af917/src/element.ts#L50-L123 "Source code on GitHub")
 
 **Extends HTMLElement**
 
@@ -79,7 +79,7 @@ customElements.define('code-syntax', CodeSyntaxElement)
 
 ### compile
 
-[src/syntax.ts:22-45](https://github.com/stagas/code-syntax/blob/f7d7a13ded13fbcfecd54aa9aa0d02e98c18ef4e/src/syntax.ts#L22-L45 'Source code on GitHub')
+[src/syntax.ts:22-45](https://github.com/stagas/code-syntax/blob/51b37e0d1389f9bf691c9ef6e9f47df1c29af917/src/syntax.ts#L22-L45 "Source code on GitHub")
 
 Compiles a syntax definition.
 
@@ -92,14 +92,14 @@ const r = await compile({
 
 #### Parameters
 
-- `def` **(SyntaxDefinition | [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)<{default: SyntaxDefinition}>)** The syntax definition to compile. Can be a promise returned by `import()`.
-- `keys` **[Set](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Set)<[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)>** &#x20;(optional, default `new Set()`)
+*   `def` **(SyntaxDefinition | [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)<{default: SyntaxDefinition}>)** The syntax definition to compile. Can be a promise returned by `import()`.
+*   `keys` **[Set](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Set)<[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)>** &#x20;(optional, default `new Set()`)
 
 Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<RegExpMapped>**&#x20;
 
 ### syntax
 
-[src/syntax.ts:66-77](https://github.com/stagas/code-syntax/blob/f7d7a13ded13fbcfecd54aa9aa0d02e98c18ef4e/src/syntax.ts#L66-L77 'Source code on GitHub')
+[src/syntax.ts:66-77](https://github.com/stagas/code-syntax/blob/51b37e0d1389f9bf691c9ef6e9f47df1c29af917/src/syntax.ts#L66-L77 "Source code on GitHub")
 
 Syntax highlights a string as html with the given syntax.
 
@@ -118,8 +118,8 @@ const html = syntax(regexp, 'hello 123 789 world')
 
 #### Parameters
 
-- `regexp` **RegExpMapped** The syntax definition returned by `compile()`
-- `s` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The string to highlight.
+*   `regexp` **RegExpMapped** The syntax definition returned by `compile()`
+*   `s` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** The string to highlight.
 
 Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)**&#x20;
 
