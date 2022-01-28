@@ -12,16 +12,16 @@ module.exports = {
   },
   extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'html-jsx'],
   ignorePatterns: ['dist', 'node_modules'],
-  plugins: ['import', 'redos'],
+  plugins: ['import'],
   rules: {
+    '@typescript-eslint/no-empty-interface': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-extra-semi': 'off',
+    '@typescript-eslint/no-inferrable-types': 'warn',
+    '@typescript-eslint/no-namespace': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-unused-vars': ['error', { args: 'all', argsIgnorePattern: '^_' }],
-    'redos/no-vulnerable': [
-      'error',
-      {
-        permittableComplexities: ['polynomial'],
-      },
-    ],
+    '@typescript-eslint/no-var-requires': 'off',
+    'no-cond-assign': 'off',
   },
 }

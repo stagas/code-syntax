@@ -26,12 +26,18 @@ export const createStyleSheet = (keys: string[]) => {
   const style = new CSSStyleSheet()
   style.replaceSync(
     `*{color:var(--color);}*::selection{background:var(--selection)!important}` +
-      keys.map(x => `.${x}{color:var(--${x});font-style:var(--${x}-style);font-weight:var(--${x}-weight)}`).join('')
+      keys
+        .map(
+          x =>
+            `.${x}{color:var(--${x});font-style:var(--${x}-style);font-weight:var(--${x}-weight)}`
+        )
+        .join('')
   )
   return style
 }
 
-export const languages: Record<string, SyntaxDefinition | Promise<{ default: SyntaxDefinition }>> = {}
+export const languages: Record<string, SyntaxDefinition | Promise<{ default: SyntaxDefinition }>> =
+  {}
 
 /**
  * CodeSyntax custom element
@@ -109,7 +115,8 @@ export class CodeSyntaxElement extends HTMLElement {
   }
 
   attributeChangedCallback(name: string, _: string | null, newValue: string | null) {
-    if (name === 'language' && newValue && newValue in languages) this.setSyntaxDefinition(languages[newValue])
+    if (name === 'language' && newValue && newValue in languages)
+      this.setSyntaxDefinition(languages[newValue])
     if (name === 'theme') this.setAttribute('code-syntax-theme', newValue!)
     if (name === 'html') this.html = newValue ?? ''
   }

@@ -1,6 +1,4 @@
-[language='css'],
-[language='html'],
-[language='js'] {
+[theme] {
   --color: var(--foreground);
   --selection: var(--selectionBackground, #15d);
 

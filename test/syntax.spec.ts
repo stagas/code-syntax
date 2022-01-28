@@ -1,4 +1,4 @@
-import { compile, syntax } from '../syntax'
+import { compile, syntax } from '../src/syntax'
 
 describe('compile', () => {
   it('simple object single rule', async () => {

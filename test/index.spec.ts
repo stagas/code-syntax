@@ -1,4 +1,4 @@
-import { CodeSyntaxElement } from '..'
+import { CodeSyntaxElement } from '../src'
 
 describe('CodeSyntaxElement', () => {
   it('can be defined as a custom element', () => {
