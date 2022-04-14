@@ -1,6 +1,7 @@
 import css from './css.js'
 import js from './js.js'
 
+/** @type {import("../").SyntaxDefinition} */
 export default {
   script: [
     /(?<=<script[^>]*?>)[^]*?(?=<\/script>)/, // entry point is a <script> tag

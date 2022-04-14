@@ -1,5 +1,6 @@
 import { join, split, modify } from './util.js'
 
+/** @type {import("../").SyntaxDefinition} */
 const R = {
   comment: [
     join('|',

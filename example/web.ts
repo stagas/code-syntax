@@ -1,14 +1,15 @@
+import 'plenty-themes/cobalt2.css'
 import 'plenty-themes/laser.css'
-import 'code-syntax/themes/default.css'
+import '../themes/default.css'
 
-import { CodeSyntaxElement, languages } from 'code-syntax'
+import { CodeSyntaxElement, languages } from '../src'
 
 customElements.define('code-syntax', CodeSyntaxElement)
 
-languages.js = import('code-syntax/languages/js')
+languages.js = import('../src/languages/js')
 
-document.querySelector('main').innerHTML = `
-<code-syntax language="js" theme="laser">class Vector {
+document.body.innerHTML = `
+<code-syntax id="demo" language="js" theme="laser">class Vector {
   x: number
   y: number
   constructor(x: number, y: number) {

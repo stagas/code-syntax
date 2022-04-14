@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
-import * as languages from '../languages'
-import { SyntaxDefinition, compile, syntax } from '../src/syntax'
+import * as languages from '../src/languages'
+import { compile, syntax, SyntaxDefinition } from '../src/syntax'
 
 const fixturesPath = path.resolve(path.join(__dirname, '__fixtures__'))
 

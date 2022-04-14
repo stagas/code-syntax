@@ -6,6 +6,7 @@ const comment = join('|',
   /(\/\*)[^]*/
 )
 
+/** @type {import("../").SyntaxDefinition} */
 export default {
   comment,
   attribute: [
@@ -22,14 +23,14 @@ export default {
       string: js.string,
       normal: /--[\w-]+/,
       declare: join('|',
-        /[\w\-]+(?=:)/,
+        /[\w-]+(?=:)/,
         split('var url ch px pt em rem vw vh vmax vmin'),
       ),
       number: join('|',
         js.number,
         /#[a-fA-F0-9]+/
       ),
-      value: /(?<=:)[\sa-z\-]*(?=;|.*})/,
+      value: /(?<=:)[\sa-z-]*(?=;|.*})/,
     }
   ],
   tag: /[\w-]+/,

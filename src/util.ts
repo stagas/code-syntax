@@ -8,13 +8,13 @@ export interface PatchOptions {
 export const patchElements = (
   elements: Element[],
   {
-    theme = 'monokai',
+    theme = 'deep',
     getLanguage = el =>
       [...el.classList]
         .filter(x => x.startsWith('language-'))[0]
         .split('-')
         .pop()!,
-  } = {} as Partial<PatchOptions>
+  } = {} as Partial<PatchOptions>,
 ) =>
   elements.forEach(oldEl => {
     const newEl = new CodeSyntaxElement()

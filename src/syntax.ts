@@ -1,11 +1,13 @@
 import { escape } from 'html-escaper'
 
-type RegExpMap = Record<string, RegExpMapped>
-export type RegExpMapped = RegExp & { map?: RegExpMap; keys?: Set<string> }
+export type RegExpMap = Record<string, RegExpMapped>
+export type RegExpMapped = RegExp & { map: RegExpMap; keys: Set<string> }
 
 export interface SyntaxDefinition {
   [k: string]: RegExp | [RegExp, SyntaxDefinition]
 }
+
+export type SyntaxOrImport = SyntaxDefinition | Promise<{ default: SyntaxDefinition }>
 
 /**
  * Compiles a syntax definition.
@@ -20,8 +22,8 @@ export interface SyntaxDefinition {
  * @param def The syntax definition to compile. Can be a promise returned by `import()`.
  */
 export const compile = async (
-  def: SyntaxDefinition | Promise<{ default: SyntaxDefinition }>,
-  keys: Set<string> = new Set()
+  def: SyntaxOrImport,
+  keys: Set<string> = new Set(),
 ): Promise<RegExpMapped> => {
   // try to extract the definitions if we're given either module or promise
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -63,14 +65,15 @@ export const compile = async (
  * @param regexp The syntax definition returned by `compile()`
  * @param s The string to highlight.
  */
-export const syntax = (regexp: RegExpMapped, s: string): string =>
+export const syntax = (regexp: RegExpMapped | RegExp, s: string): string =>
   s.replace(RegExp('(' + regexp.source + ')|(?<catchbad>[&<>"\'])', 'gm'), (...args: unknown[]) => {
     const groups = args.pop() as RegExpMatchArray
     const entries = Object.entries(groups).filter(e => e[1] != null)
+    if (!entries.length) return ''
     const [tag, value] = entries[0]
     if (tag === 'catchbad') return escape(value)
-    if (regexp.map) {
-      const sub = regexp.map[tag]
+    if ((regexp as RegExpMapped).map) {
+      const sub = (regexp as RegExpMapped).map[tag]
       if (sub) return `<span class="${tag}-outer">${syntax(sub, value)}</span>`
     }
     return `<span class="${tag}">${escape(value)}</span>`

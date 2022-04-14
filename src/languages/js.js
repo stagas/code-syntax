@@ -1,5 +1,6 @@
 import { join, split, modify } from './util.js'
 
+/** @type {import("../").SyntaxDefinition} */
 const R = {
   comment: [
     join('|',
@@ -41,7 +42,7 @@ const R = {
     /\b(?![:])/,
   ),
   function: join('|',
-    /[$#\w]+(?=(\s\=)?\s*[<(`])/,
+    /[$#\w]+(?=(\s=)?\s*[<(`])/,
     /(?<=(class|interface)\s+)\w+(?=(<\w>)?\s*((extends|implements)\s*[\w<>]+\s*(implements\s*\w+\s*)?)?\s*\{)/,
     /(?<=extends\s+)\w+/,
     /(?<=implements\s+)\w+/

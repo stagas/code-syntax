@@ -6,7 +6,7 @@ declare module 'make-cert'
 
 declare module 'scoped-registries'
 
-declare module '../languages/*' {
+declare module '../src/languages/*' {
   import { SyntaxDefinition } from '.'
   export default {} as SyntaxDefinition
 }
