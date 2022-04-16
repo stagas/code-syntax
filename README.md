@@ -1,5 +1,5 @@
 <h1>
-code-syntax <a href="https://npmjs.org/package/code-syntax"><img src="https://img.shields.io/badge/npm-v2.0.0-F00.svg?colorA=000"/></a> <a href="src"><img src="https://img.shields.io/badge/loc-520-FFF.svg?colorA=000"/></a> <a href="https://cdn.jsdelivr.net/npm/code-syntax@2.0.0/dist/code-syntax.min.js"><img src="https://img.shields.io/badge/brotli-2.8K-333.svg?colorA=000"/></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-F0B.svg?colorA=000"/></a>
+code-syntax <a href="https://npmjs.org/package/code-syntax"><img src="https://img.shields.io/badge/npm-v2.0.1-F00.svg?colorA=000"/></a> <a href="src"><img src="https://img.shields.io/badge/loc-520-FFF.svg?colorA=000"/></a> <a href="https://cdn.jsdelivr.net/npm/code-syntax@2.0.1/dist/code-syntax.min.js"><img src="https://img.shields.io/badge/brotli-2.8K-333.svg?colorA=000"/></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-F0B.svg?colorA=000"/></a>
 </h1>
 
 <p></p>
@@ -18,7 +18,7 @@ Code syntax highlight Web Component
 
 ## Examples
 
-<details id="example$web" title="web" open><summary><span><a href="#example$web">#</a></span>  <code><strong>web</strong></code></summary>  <ul>    <details id="source$web" title="web source code" ><summary><span><a href="#source$web">#</a></span>  <code><strong>view source</strong></code></summary>  <a href="example/web.ts">example/web.ts</a>  <p>
+<details id="example$web" title="web" open><summary><span><a href="#example$web">#</a></span>  <code><strong>web</strong></code></summary>  <ul><p></p>  <a href="https://stagas.github.io/code-syntax/example/web.html"><img width="436.57142857142856" src="example/web.png"></img>  <p><strong>Try it live</strong></p></a>    <details id="source$web" title="web source code" ><summary><span><a href="#source$web">#</a></span>  <code><strong>view source</strong></code></summary>  <a href="example/web.ts">example/web.ts</a>  <p>
 
 ```ts
 import 'code-syntax/themes/default.css'
@@ -26,13 +26,14 @@ import 'plenty-themes/cobalt2.css'
 import 'plenty-themes/laser.css'
 
 import { CodeSyntaxElement, languages } from 'code-syntax'
+import js from 'code-syntax/languages/js'
 
 customElements.define('code-syntax', CodeSyntaxElement)
 
-languages.js = import('code-syntax/languages/js')
+languages.js = js // can also be import(code-syntax.) directly
 
 document.body.innerHTML = `
-<code-syntax id="demo" language="js" theme="laser">class Vector {
+<code-syntax id="demo" style="display:inline-flex;" language="js" theme="laser">class Vector {
   x: number
   y: number
   constructor(x: number, y: number) {
