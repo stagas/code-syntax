@@ -18,6 +18,7 @@
   ],
   "excludes": [
     "node_modules/**/*",
+    "src/languages/**/*",
     "coverage/**/*",
     "dist/**/*",
     ".swc/**/*",
