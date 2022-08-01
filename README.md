@@ -1,5 +1,5 @@
 <h1>
-code-syntax <a href="https://npmjs.org/package/code-syntax"><img src="https://img.shields.io/badge/npm-v3.0.0-F00.svg?colorA=000"/></a> <a href="src"><img src="https://img.shields.io/badge/loc-519-FFF.svg?colorA=000"/></a> <a href="https://cdn.jsdelivr.net/npm/code-syntax@3.0.0/dist/code-syntax.min.js"><img src="https://img.shields.io/badge/brotli-16.4K-333.svg?colorA=000"/></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-F0B.svg?colorA=000"/></a>
+code-syntax <a href="https://npmjs.org/package/code-syntax"><img src="https://img.shields.io/badge/npm-v4.0.0-F00.svg?colorA=000"/></a> <a href="src"><img src="https://img.shields.io/badge/loc-519-FFF.svg?colorA=000"/></a> <a href="https://cdn.jsdelivr.net/npm/code-syntax@4.0.0/dist/code-syntax.min.js"><img src="https://img.shields.io/badge/brotli-16.4K-333.svg?colorA=000"/></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-F0B.svg?colorA=000"/></a>
 </h1>
 
 <p></p>
